@@ -5,13 +5,13 @@ float n as argument and returns the floor of the float.
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """_summary_
 
     Args:
         n (float): Arg
 
     Returns:
-        float: _description_
+        float: 
     """
-    return n
+    return int(n)
