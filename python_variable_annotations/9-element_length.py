@@ -5,8 +5,8 @@ function’s parameters and return values with the appropriate types
 from typing import Iterable, Sequence, List, Tuple
 
 
-def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, list]]:
-    """function’s parameters and return values 
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """function’s parameters and return values
     with the appropriate types
 
     Args:

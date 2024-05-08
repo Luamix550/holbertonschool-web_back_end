@@ -14,7 +14,7 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
 
     Args:
         k (str):
-        v (Union[int, float]):
+        v (Union[int, float])
 
     Returns:
         Tuple[str, float]
