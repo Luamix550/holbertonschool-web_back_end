@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-function to_str that takes a float n as argument 
+function to_str that takes a float n as argument
 and returns the string representation of the float.
 """
+
+
 def to_str(n: float) -> str:
     """
 
     Args:
-        n (float): 
+        n (float)
 
     Returns:
-        str: _description_
+        str: string representation
     """
     return str(n)
