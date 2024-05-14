@@ -4,11 +4,12 @@ Python function that changes all topics of a school
 document based on the name
 """
 
+
 def update_topics(mongo_collection, name, topics):
     """Update all topics based on the name
 
     Args:
-        mongo_collection: Collection to change topics 
+        mongo_collection: Collection to change topics
         name: filter to cahnge the topic
         topics: to change
 
