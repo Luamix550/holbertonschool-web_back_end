@@ -6,5 +6,16 @@ a collection based on kwargs
 
 
 def insert_school(mongo_collection, **kwargs):
-    insert_d = mongo_collection.insert_many(kwargs)
-    return insert_d.inserted_id
+    """
+    Insert a new school document into a MongoDB collection.
+
+    Args:
+        mongo_collection: A pymongo collection object.
+        **kwargs: Keyword arguments representing the fields
+        and values of the school document to be inserted.
+
+    Returns:
+        The ObjectId (_id) of the newly inserted school document.
+    """
+    result = mongo_collection.insert_one(kwargs)
+    return result.inserted_id
