@@ -14,7 +14,7 @@ def log_stats():
     The statistics include:
     - Total number of logs
     - Number of logs for each HTTP method (GET, POST, PUT, PATCH, DELETE)
-    - Number of logs with method 'GET' and path '/status'
+    - Number of  logs with method 'GET' and path '/status'
     """
     client = MongoClient()
     collection = client.logs.nginx
