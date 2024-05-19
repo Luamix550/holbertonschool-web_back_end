@@ -5,12 +5,12 @@ Deletion-resilient hypermedia pagination
 
 
 import csv
+import math
 from typing import Dict, List
 
 
 class Server:
-    """
-    Server class to paginate a database of popular baby names.
+    """Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -34,7 +34,7 @@ class Server:
         """
         if self.__indexed_dataset is None:
             dataset = self.dataset()
-            dataset[:1000]
+            truncated_dataset = dataset[:1000]
             self.__indexed_dataset = {
                 i: dataset[i] for i in range(len(dataset))
             }
