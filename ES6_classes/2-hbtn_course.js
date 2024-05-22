@@ -1,4 +1,4 @@
-class HolbertonCourse {
+export default class HolbertonCourse {
     constructor(name, length, students){
         if (typeof name !== 'string') {
             throw TypeError('Name must be a string')
@@ -6,8 +6,8 @@ class HolbertonCourse {
         if (typeof length !== 'number') {
             throw TypeError('Length must be a number')
         }
-        if (typeof students !== 'string') {
-            throw TypeError('Name must be a string')
+        if (typeof students !== 'object') {
+            throw TypeError('Length must be a number')
         }
         this._name = name
         this._length = length
