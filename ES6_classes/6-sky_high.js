@@ -14,8 +14,24 @@ export default class SkyHighBuilding extends Building {
     return this._sqft;
   }
 
+  set sqft(value) {
+    if (typeof value === 'number') {
+      this._length = value;
+    } else {
+      throw new TypeError('Length must be a number');
+    }
+  }
+
   get floors() {
     return this._floors;
+  }
+
+  set floors(value) {
+    if (typeof value === 'number') {
+      this._length = value;
+    } else {
+      throw new TypeError('Length must be a number');
+    }
   }
 
   evalatuationMethodWarning() {
