@@ -9,3 +9,5 @@ function handleProfileSignup() {
       console.log('Signup system offline');
     });
 }
+
+export default handleProfileSignup;
