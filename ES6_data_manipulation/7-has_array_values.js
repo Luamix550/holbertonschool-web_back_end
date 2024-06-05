@@ -1,8 +1,8 @@
 export default function hasValuesFromArray(set, array) {
-  for (let element of array) {
+  array.forEach(element => {
     if (!set.has(element)) {
       return false;
     }
-  }
-return true;
+  });
+  return true;
 }
