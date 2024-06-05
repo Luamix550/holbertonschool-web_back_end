@@ -4,5 +4,5 @@ export default function hasValuesFromArray(set, array) {
       return false;
     }
   }
-return true;
+  return true;
 }
